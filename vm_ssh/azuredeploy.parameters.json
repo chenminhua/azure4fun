@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "projectName":{
+            "value": "GEN-UNIQUE-8"
+          },
+        "adminUsername": {
+            "value": "minhchen"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDI0D9YosoyN4jKbJKJoIJ/cUALtDEyJ5F9HHyUwMqIgwAYlVG1kNXOYI1bC1IzjD/kmh0tIhFXdCB2XIt8vxSEVMdUJT3ECIFIm5ikNRHkjRoSU5V16DurN5x2+fzrB1mYG3wqafG3hkFrocAnNFTDuMGa7Y4SAtTO6K4o8QETxzkUy1zMYEmQWfqwIcHrJd7Nax2ndaCTFoO9vdpYHy1dlBq3T6R0A1vcerfAtKgj9UcCW5qxPAAL1UU2VnK0XXwMCMbeW0LhTwXBbaNs8BAb39AiBOkqcqf8QLiV6oOT/lE1eOVuwA/8cmmZcZAaXWKFSRM+UcvKUBL+3Fq6gjf3 fareast\minhchen@minhua-pc"
+        }
+    }
+}
