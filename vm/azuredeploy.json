@@ -21,10 +21,10 @@
         "description": "Specifies a username for the Virtual Machine."
       }
     },
-    "adminPublicKey": {
+    "sshKeyData": {
       "type": "string",
       "metadata": {
-        "description": "Specifies the SSH rsa public key file as a string. Use \"ssh-keygen -t rsa -b 2048\" to generate your SSH key pairs."
+        "description": "SSH rsa public key file as a string."
       }
     }
   },
@@ -170,12 +170,12 @@
           "computerName": "[variables('vmName')]",
           "adminUsername": "[parameters('adminUsername')]",
           "linuxConfiguration": {
-            "disablePasswordAuthentication": true,
+            "disablePasswordAuthentication": "true",
             "ssh": {
               "publicKeys": [
                 {
                   "path": "[concat('/home/', parameters('adminUsername'), '/.ssh/authorized_keys')]",
-                  "keyData": "[parameters('adminPublicKey')]"
+                  "keyData": "[parameters('sshKeyData')]"
                 }
               ]
             }
