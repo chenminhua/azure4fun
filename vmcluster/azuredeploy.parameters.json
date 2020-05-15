@@ -3,11 +3,11 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "virtualMachineAdminUserName": {
-        "value": "azadmin"
+        "value": "minhua"
       },
-      "virtualMachineAdminPassword": {
-        "value": "Minh3hen!"
-      },
+      // "virtualMachineAdminPassword": {
+      //   "value": "Minh3hen!"
+      // },
       "virtualMachineNamePrefix": {
         "value": "MyVM0"
       },
@@ -17,14 +17,22 @@
       "virtualMachineSize": {
         "value": "Standard_DS1_v2"
       },
-      "operatingSystem": {
-        "value": "Server2016"
-      },
+      // "operatingSystem": {
+      //   "value": "Server2016"
+      // },
       "availabilitySetName": {
         "value": "MyAvailabilitySet"
       },
       "dnsPrefixForPublicIP": {
         "value": "minhua"
+      },
+      "sshKeyData": {
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/7c11fcf9-964b-4289-b1f6-6873bee8d574/resourceGroups/rg-azurekv/providers/Microsoft.KeyVault/vaults/azurekvStan"
+           },
+          "secretName": "sshpubkey"
+        }
       }
     }
   }
