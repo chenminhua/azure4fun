@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "minhchen"
+    },
+    "openvpnPassword": {
+      "value": "Minh3hen!"
+    },
+    "dnsNamePrefix": {
+      "value": "mhvpn"
+    },
+    
+    "sshKeyData": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/7c11fcf9-964b-4289-b1f6-6873bee8d574/resourceGroups/rg-azurekv/providers/Microsoft.KeyVault/vaults/azurekvStan"
+         },
+        "secretName": "sshpubkey"
+      }
+    }
+  }
+}
