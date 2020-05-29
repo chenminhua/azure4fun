@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "clusterName": {
+      "value": "sfc"
+    },
+    "adminUsername": {
+      "value": "minhchen"
+    },
+    "adminPassword": {
+      "value": "GR<9ck!C1234"
+    },
+    "certificateThumbprint": {
+      "value": "F9CE0F64DFA5ED9ED253AD49369B1113C14FBE78"
+    },
+    "sourceVaultResourceId": {
+      "value": "/subscriptions/7c11fcf9-964b-4289-b1f6-6873bee8d574/resourceGroups/rg-azurekv/providers/Microsoft.KeyVault/vaults/azurekvStan"
+    },
+    "certificateUrlValue": {
+      "value": "https://azurekvstan.vault.azure.net:443/secrets/sfSecret/d7178f431e124efa8ed193525b3db5b5"
+    }
+  }
+}
