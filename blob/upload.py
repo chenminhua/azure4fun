@@ -4,7 +4,7 @@ from azure.storage.blob import ContainerClient, BlobClient
 
 # container_client.create_container()
 
-blob = BlobClient.from_connection_string(conn_str="连接字符串", container_name="images", blob_name="blahblahsa")
+blob = BlobClient.from_connection_string(conn_str="DefaultEndpointsProtocol=https;AccountName=blahblahsa;AccountKey=OGDldoiJybwwxMF8BwPVzxQ/R/u0eyza0nuxu71X6Tb15E0gb50E2VO1RSAI46lS+r4bylX00ipPTHdJaro2CA==;EndpointSuffix=core.windows.net", container_name="logs", blob_name="video.mp4")
 
-with open("./azuredeploy.json", "rb") as data:
+with open("./video.mp4", "rb") as data:
     blob.upload_blob(data)
